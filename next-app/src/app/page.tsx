@@ -82,7 +82,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-white via-green-200 to-green-400 bg-clip-text text-transparent mb-6">
-              I'm Kam (code name Amiri)
+              I&apos;m Kam (code name Amiri)
             </h1>
             <p className="text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
               & I am a software engineer dedicated to helping this world, one line of code 
@@ -170,12 +170,12 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <p className="text-gray-300 mb-6 leading-relaxed">
-                I'm a passionate full-stack developer with 5+ years of experience building 
+                I&apos;m a passionate full-stack developer with 5+ years of experience building 
                 scalable web applications. I specialize in modern JavaScript frameworks, 
                 cloud technologies, and creating intuitive user experiences.
               </p>
               <p className="text-gray-300 mb-8 leading-relaxed">
-                When I'm not coding, you can find me exploring new technologies, 
+                When I&apos;m not coding, you can find me exploring new technologies, 
                 contributing to open source projects, or sharing knowledge with the developer community.
               </p>
               
@@ -229,11 +229,11 @@ export default function Home() {
       {/* Contact Section */}
       <section id="contact" className="py-16 bg-gradient-to-br from-black via-green-900/20 to-gray-800">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold text-white mb-4">Let's Work Together</h2>
+          <h2 className="text-3xl font-bold text-white mb-4">Let&apos;s Work Together</h2>
           <div className="w-24 h-1 bg-gradient-to-r from-green-500 to-green-400 mx-auto mb-8"></div>
           <p className="text-gray-300 mb-8 text-lg leading-relaxed">
-            Have a project in mind? I'd love to hear about it. 
-            Let's discuss how we can bring your ideas to life.
+            Have a project in mind? I&apos;d love to hear about it. 
+            Let&apos;s discuss how we can bring your ideas to life.
           </p>
           <a
             href="mailto:your.email@example.com"
