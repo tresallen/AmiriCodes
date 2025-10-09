@@ -4,57 +4,52 @@ export default function Home() {
   const projects = [
     {
       id: 1,
-      title: "E-Commerce Platform",
-      description: "A full-stack e-commerce solution built with React, Node.js, and MongoDB. Features include user authentication, payment processing, inventory management, and admin dashboard.",
-      slug: "ecommerce-platform",
-      tech: ["React", "Node.js", "MongoDB", "Stripe", "JWT"],
-      status: "Completed",
-      year: "2024"
+      title: "Freelance Software Engineer",
+      description: "",
+      tech: ["Python", "FastAPI", "AI/ML", "LLMs", "Typescript", "Next.js"],
+      status: "Current",
+      year: "Aug 2025 - Current"
     },
     {
       id: 2,
-      title: "Task Management App",
-      description: "A collaborative task management application with real-time updates, team collaboration features, project tracking, and deadline management capabilities.",
-      slug: "task-management-app",
-      tech: ["Next.js", "TypeScript", "Socket.io", "PostgreSQL", "Prisma"],
+      title: "Contracted Systems Engineer",
+      description: "Amazon",
+      tech: ["AWS", "CI/CD", "Terraform", "Bash", "PowerShell", "Linux"],
       status: "Completed",
-      year: "2024"
+      year: "Nov 2024 - Jan 2025"
     },
     {
       id: 3,
-      title: "Weather Dashboard",
-      description: "A responsive weather application that provides current conditions, 7-day forecasts, interactive maps, and location-based weather alerts.",
-      slug: "weather-dashboard",
-      tech: ["Vue.js", "Chart.js", "OpenWeather API", "PWA"],
+      title: "Software Engineer",
+      description: "General Motors",
+      tech: ["React", "Azure DevOps", "Java", "REST & GraphQL APIs", "SQL"],
       status: "Completed",
-      year: "2023"
+      year: "Jan 2023 - Aug 2024"
     },
     {
       id: 4,
-      title: "AI Chat Bot",
-      description: "An intelligent chatbot powered by machine learning that can handle customer inquiries, provide technical support, and learn from user interactions.",
-      slug: "ai-chatbot",
-      tech: ["Python", "TensorFlow", "FastAPI", "WebSocket", "Redis"],
-      status: "In Progress",
-      year: "2024"
+      title: "Software Engineer Intern",
+      description: "General Motors",
+      tech: ["Python", "RobotFramework", "Elasticsearch", "Java", "QA Automation"],
+      status: "Completed",
+      year: "Jun 2022 - Sep 2022"
     },
     {
       id: 5,
-      title: "Social Media Analytics",
+      title: "Vereda",
       description: "A comprehensive analytics dashboard for tracking social media performance, engagement metrics, and content optimization insights.",
       slug: "social-media-analytics",
       tech: ["React", "D3.js", "Node.js", "MongoDB", "REST API"],
       status: "Completed",
-      year: "2023"
+      year: "2024"
     },
     {
       id: 6,
-      title: "Mobile Banking App",
-      description: "A secure mobile banking application with features like account management, money transfers, bill payments, and transaction history.",
-      slug: "mobile-banking-app",
-      tech: ["React Native", "Node.js", "PostgreSQL", "Biometric Auth"],
+      title: "Amiri Codes Website",
+      description: "A personal portfolio.",
+      tech: ["Typescript", "Next.js", "PostgreSQL", "Node.js"],
       status: "Completed",
-      year: "2023"
+      year: "2025"
     }
   ];
 
@@ -170,9 +165,10 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <p className="text-gray-300 mb-6 leading-relaxed">
-                I&apos;m a passionate full-stack developer with 5+ years of experience building 
-                scalable web applications. I specialize in modern JavaScript frameworks, 
-                cloud technologies, and creating intuitive user experiences.
+                I am a dynamic and goal-oriented software developer looking to leverage my skills in full-stack development
+                to contribute to scalable, secure & user-focused web applications. I am an eager and curious learner, who
+                embraces complex challenges with modern solutions. I am skilled in frontend development and API design and integration,
+                with a knack for teamwork and problem solving. I am confident that I would be a valued addition to any organization.
               </p>
               <p className="text-gray-300 mb-8 leading-relaxed">
                 When I&apos;m not coding, you can find me exploring new technologies, 
