@@ -63,7 +63,7 @@ export default function Home() {
               AmiriCodes
             </div>
             <nav className="hidden md:flex space-x-8">
-              <a href="#projects" className="text-gray-300 hover:text-green-400 transition-colors">Projects</a>
+              <a href="#projects" className="text-gray-300 hover:text-green-400 transition-colors">Work</a>
               <a href="#about" className="text-gray-300 hover:text-green-400 transition-colors">About</a>
               <a href="#contact" className="text-gray-300 hover:text-green-400 transition-colors">Contact</a>
               <a href="/resume" className="text-gray-300 hover:text-green-400 transition-colors">Resume</a>
@@ -247,7 +247,7 @@ export default function Home() {
       <footer className="bg-gradient-to-r from-black via-green-900/30 to-black text-white py-8 border-t border-green-700/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <p className="text-gray-400">
-            &copy; 2024 Your Name. All rights reserved. Built with Next.js and Tailwind CSS.
+            &copy; 2025 Kameron Allen. All rights reserved. Built with Next.js and Tailwind CSS.
           </p>
         </div>
       </footer>
