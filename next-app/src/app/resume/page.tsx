@@ -14,7 +14,7 @@ export default function ResumePage() {
             </Link>
             <nav className="hidden md:flex space-x-8">
               <a href="https://amiricodes.app" className="text-gray-300 hover:text-green-400 transition-colors">Home</a>
-              <Link href="/#projects" className="text-gray-300 hover:text-green-400 transition-colors">Projects</Link>
+              <Link href="/#projects" className="text-gray-300 hover:text-green-400 transition-colors">Work</Link>
               <Link href="/#about" className="text-gray-300 hover:text-green-400 transition-colors">About</Link>
               <Link href="/#contact" className="text-gray-300 hover:text-green-400 transition-colors">Contact</Link>
               <a href="https://amiricodes.hashnode.dev/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-green-400 transition-colors">Blog</a>
