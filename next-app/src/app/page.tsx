@@ -63,6 +63,7 @@ export default function Home() {
               AmiriCodes
             </div>
                 <nav className="hidden md:flex space-x-8">
+                  <a href="https://amiricodes.app" className="text-gray-300 hover:text-green-400 transition-colors">Home</a>
                   <a href="#projects" className="text-gray-300 hover:text-green-400 transition-colors">Work</a>
                   <a href="#about" className="text-gray-300 hover:text-green-400 transition-colors">About</a>
                   <a href="#contact" className="text-gray-300 hover:text-green-400 transition-colors">Contact</a>

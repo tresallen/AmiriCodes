@@ -132,6 +132,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
               Your Name
             </Link>
                   <nav className="hidden md:flex space-x-8">
+                    <a href="https://amiricodes.app" className="text-gray-300 hover:text-green-400 transition-colors">Home</a>
                     <Link href="/#about" className="text-gray-300 hover:text-green-400 transition-colors">About</Link>
                     <Link href="/#projects" className="text-gray-300 hover:text-green-400 transition-colors">Projects</Link>
                     <Link href="/#contact" className="text-gray-300 hover:text-green-400 transition-colors">Contact</Link>
