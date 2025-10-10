@@ -131,11 +131,13 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
             <Link href="/" className="text-2xl font-bold text-white hover:text-green-400 transition-colors">
               Your Name
             </Link>
-            <nav className="hidden md:flex space-x-8">
-              <Link href="/#about" className="text-gray-300 hover:text-green-400 transition-colors">About</Link>
-              <Link href="/#projects" className="text-gray-300 hover:text-green-400 transition-colors">Projects</Link>
-              <Link href="/#contact" className="text-gray-300 hover:text-green-400 transition-colors">Contact</Link>
-            </nav>
+                  <nav className="hidden md:flex space-x-8">
+                    <Link href="/#about" className="text-gray-300 hover:text-green-400 transition-colors">About</Link>
+                    <Link href="/#projects" className="text-gray-300 hover:text-green-400 transition-colors">Projects</Link>
+                    <Link href="/#contact" className="text-gray-300 hover:text-green-400 transition-colors">Contact</Link>
+                    <a href="https://amiricodes.hashnode.dev/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-green-400 transition-colors">Blog</a>
+                    <Link href="/resume" className="text-gray-300 hover:text-green-400 transition-colors">Resume</Link>
+                  </nav>
           </div>
         </div>
       </header>

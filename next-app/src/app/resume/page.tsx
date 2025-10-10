@@ -16,6 +16,7 @@ export default function ResumePage() {
               <Link href="/#projects" className="text-gray-300 hover:text-green-400 transition-colors">Projects</Link>
               <Link href="/#about" className="text-gray-300 hover:text-green-400 transition-colors">About</Link>
               <Link href="/#contact" className="text-gray-300 hover:text-green-400 transition-colors">Contact</Link>
+              <a href="https://amiricodes.hashnode.dev/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-green-400 transition-colors">Blog</a>
               <Link href="/resume" className="text-green-400 font-semibold">Resume</Link>
             </nav>
           </div>

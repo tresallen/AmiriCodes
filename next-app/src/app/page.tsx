@@ -62,12 +62,13 @@ export default function Home() {
             <div className="text-2xl font-bold text-white">
               AmiriCodes
             </div>
-            <nav className="hidden md:flex space-x-8">
-              <a href="#projects" className="text-gray-300 hover:text-green-400 transition-colors">Work</a>
-              <a href="#about" className="text-gray-300 hover:text-green-400 transition-colors">About</a>
-              <a href="#contact" className="text-gray-300 hover:text-green-400 transition-colors">Contact</a>
-              <a href="/resume" className="text-gray-300 hover:text-green-400 transition-colors">Resume</a>
-            </nav>
+                <nav className="hidden md:flex space-x-8">
+                  <a href="#projects" className="text-gray-300 hover:text-green-400 transition-colors">Work</a>
+                  <a href="#about" className="text-gray-300 hover:text-green-400 transition-colors">About</a>
+                  <a href="#contact" className="text-gray-300 hover:text-green-400 transition-colors">Contact</a>
+                  <a href="https://amiricodes.hashnode.dev/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-green-400 transition-colors">Blog</a>
+                  <a href="/resume" className="text-gray-300 hover:text-green-400 transition-colors">Resume</a>
+                </nav>
           </div>
         </div>
       </header>
@@ -142,7 +143,7 @@ export default function Home() {
                     href={`/projects/${project.slug}`}
                     className="inline-flex items-center text-green-400 hover:text-green-300 font-semibold transition-colors group/link"
                   >
-                    View Project Details
+                    View Details
                     <svg className="w-4 h-4 ml-2 group-hover/link:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                     </svg>
