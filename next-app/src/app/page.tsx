@@ -139,15 +139,89 @@ export default function Home() {
                     ))}
                   </div>
                   
-                  <Link
-                    href={`/projects/${project.slug}`}
-                    className="inline-flex items-center text-green-400 hover:text-green-300 font-semibold transition-colors group/link"
-                  >
-                    View Details
-                    <svg className="w-4 h-4 ml-2 group-hover/link:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                  </Link>
+                  {project.id === 1 ? (
+                    <a
+                      href="https://amiricodes.hashnode.dev/hello-world-meet-gpt"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center text-green-400 hover:text-green-300 font-semibold transition-colors group/link"
+                    >
+                      View Details
+                      <svg className="w-4 h-4 ml-2 group-hover/link:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
+                    </a>
+                  ) : project.id === 2 ? (
+                    <a
+                      href="https://amiricodes.hashnode.dev/different-technologies-same-learning-curve"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center text-green-400 hover:text-green-300 font-semibold transition-colors group/link"
+                    >
+                      View Details
+                      <svg className="w-4 h-4 ml-2 group-hover/link:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
+                    </a>
+                  ) : project.id === 3 ? (
+                    <a
+                      href="https://amiricodes.hashnode.dev/fleet-and-field-applications-at-general-motors"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center text-green-400 hover:text-green-300 font-semibold transition-colors group/link"
+                    >
+                      View Details
+                      <svg className="w-4 h-4 ml-2 group-hover/link:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
+                    </a>
+                  ) : project.id === 4 ? (
+                    <a
+                      href="https://amiricodes.hashnode.dev/from-assuring-patients-to-assuring-code"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center text-green-400 hover:text-green-300 font-semibold transition-colors group/link"
+                    >
+                      View Details
+                      <svg className="w-4 h-4 ml-2 group-hover/link:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
+                    </a>
+                  ) : project.id === 5 ? (
+                    <a
+                      href="https://amiricodes.hashnode.dev/from-one-fall-to-a-lifelong-climb"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center text-green-400 hover:text-green-300 font-semibold transition-colors group/link"
+                    >
+                      View Details
+                      <svg className="w-4 h-4 ml-2 group-hover/link:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
+                    </a>
+                  ) : project.id === 6 ? (
+                    <a
+                      href="https://amiricodes.hashnode.dev/codenamed-kids-next-developer"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center text-green-400 hover:text-green-300 font-semibold transition-colors group/link"
+                    >
+                      View Details
+                      <svg className="w-4 h-4 ml-2 group-hover/link:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
+                    </a>
+                  ) : (
+                    <Link
+                      href={`/projects/${project.slug}`}
+                      className="inline-flex items-center text-green-400 hover:text-green-300 font-semibold transition-colors group/link"
+                    >
+                      View Details
+                      <svg className="w-4 h-4 ml-2 group-hover/link:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
+                    </Link>
+                  )}
                 </div>
               </div>
             ))}
