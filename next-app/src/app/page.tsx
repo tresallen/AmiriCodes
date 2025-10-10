@@ -202,7 +202,7 @@ export default function Home() {
                     </a>
                   ) : project.id === 6 ? (
                     <a
-                      href="https://amiricodes.hashnode.dev/codenamed-kids-next-developer"
+                      href="https://amiricodes.hashnode.dev/codename-kids-next-developer"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center text-green-400 hover:text-green-300 font-semibold transition-colors group/link"
