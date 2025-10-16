@@ -48,7 +48,7 @@ export default function Home() {
       title: "Amiri Codes Website",
       description: "A personal portfolio.",
       tech: ["Typescript", "Next.js", "PostgreSQL", "Node.js"],
-      status: "Work in Progress",
+      status: "Habitual Work in Progress",
       year: "2025"
     }
   ];
