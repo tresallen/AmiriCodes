@@ -123,7 +123,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className={`pt-24 transition-colors duration-300 ${
         theme === 'dark'
-          ? 'bg-gradient-to-br from-black via-green-900/10 to-gray-900'
+          ? ''
           : 'bg-gradient-to-br from-white via-green-50 to-gray-50'
       }`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
@@ -148,7 +148,7 @@ export default function Home() {
       {/* Projects Section */}
       <section id="projects" className={`py-16 scroll-mt-24 transition-colors duration-300 ${
         theme === 'dark'
-          ? 'bg-gradient-to-br from-black via-green-900/10 to-gray-900'
+          ? ''
           : 'bg-gradient-to-br from-gray-50 via-green-50/50 to-white'
       }`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -321,7 +321,7 @@ export default function Home() {
       {/* About Section */}
       <section id="about" className={`py-16 scroll-mt-24 transition-colors duration-300 ${
         theme === 'dark'
-          ? 'bg-gradient-to-br from-black via-green-900/20 to-gray-800'
+          ? ''
           : 'bg-gradient-to-br from-white via-green-50 to-gray-100'
       }`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -405,7 +405,7 @@ export default function Home() {
       {/* Contact Section */}
       <section id="contact" className={`py-16 scroll-mt-24 transition-colors duration-300 ${
         theme === 'dark'
-          ? 'bg-gradient-to-br from-black via-green-900/20 to-gray-800'
+          ? ''
           : 'bg-gradient-to-br from-gray-50 via-green-50 to-white'
       }`}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -430,7 +430,7 @@ export default function Home() {
       {/* Footer */}
       <footer className={`py-8 border-t transition-colors duration-300 ${
         theme === 'dark'
-          ? 'bg-gradient-to-r from-black via-green-900/30 to-black text-white border-green-700/30'
+          ? 'text-white border-green-700/30'
           : 'bg-gradient-to-r from-white via-green-50 to-white text-gray-900 border-green-200'
       }`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
