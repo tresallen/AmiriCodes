@@ -146,7 +146,7 @@ export default function Home() {
       </section>
 
       {/* Projects Section */}
-      <section id="projects" className={`py-16 transition-colors duration-300 ${
+      <section id="projects" className={`py-16 scroll-mt-24 transition-colors duration-300 ${
         theme === 'dark'
           ? 'bg-gradient-to-br from-black via-green-900/10 to-gray-900'
           : 'bg-gradient-to-br from-gray-50 via-green-50/50 to-white'
@@ -319,7 +319,7 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section id="about" className={`py-16 transition-colors duration-300 ${
+      <section id="about" className={`py-16 scroll-mt-24 transition-colors duration-300 ${
         theme === 'dark'
           ? 'bg-gradient-to-br from-black via-green-900/20 to-gray-800'
           : 'bg-gradient-to-br from-white via-green-50 to-gray-100'
@@ -403,7 +403,7 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className={`py-16 transition-colors duration-300 ${
+      <section id="contact" className={`py-16 scroll-mt-24 transition-colors duration-300 ${
         theme === 'dark'
           ? 'bg-gradient-to-br from-black via-green-900/20 to-gray-800'
           : 'bg-gradient-to-br from-gray-50 via-green-50 to-white'
