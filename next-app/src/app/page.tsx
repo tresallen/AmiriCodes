@@ -329,13 +329,13 @@ export default function Home() {
           
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <p className={`mb-6 leading-relaxed ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>
+              <p className={`text-xl mb-6 leading-relaxed ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>
                 I am a dynamic and goal-oriented software developer looking to leverage my skills in full-stack development
                 to contribute to scalable, secure & user-focused web applications. I am an eager and curious learner, who
                 embraces complex challenges with modern solutions. I am skilled in frontend development and API design and integration,
                 with a knack for teamwork and problem solving. I am confident that I would be a valued addition to any organization.
               </p>
-              <p className={`mb-8 leading-relaxed ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>
+              <p className={`text-xl mb-8 leading-relaxed ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>
                 When I&apos;m not coding, you can find me exploring new technologies, 
                 contributing to open source projects, or sharing knowledge with the developer community.
               </p>
