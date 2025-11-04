@@ -85,9 +85,6 @@ export default function Home() {
                 <a href="#about" className={`transition-colors ${
                   theme === 'dark' ? 'text-gray-300 hover:text-green-400' : 'text-gray-700 hover:text-green-600'
                 }`}>About</a>
-                <a href="#contact" className={`transition-colors ${
-                  theme === 'dark' ? 'text-gray-300 hover:text-green-400' : 'text-gray-700 hover:text-green-600'
-                }`}>Contact</a>
                 <a href="https://amiricodes.hashnode.dev/" target="_blank" rel="noopener noreferrer" className={`transition-colors ${
                   theme === 'dark' ? 'text-gray-300 hover:text-green-400' : 'text-gray-700 hover:text-green-600'
                 }`}>Blog</a>

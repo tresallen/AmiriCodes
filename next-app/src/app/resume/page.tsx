@@ -36,9 +36,6 @@ export default function ResumePage() {
                 <Link href="/#about" className={`transition-colors ${
                   theme === 'dark' ? 'text-gray-300 hover:text-green-400' : 'text-gray-700 hover:text-green-600'
                 }`}>About</Link>
-                <Link href="/#contact" className={`transition-colors ${
-                  theme === 'dark' ? 'text-gray-300 hover:text-green-400' : 'text-gray-700 hover:text-green-600'
-                }`}>Contact</Link>
                 <a href="https://amiricodes.hashnode.dev/" target="_blank" rel="noopener noreferrer" className={`transition-colors ${
                   theme === 'dark' ? 'text-gray-300 hover:text-green-400' : 'text-gray-700 hover:text-green-600'
                 }`}>Blog</a>
