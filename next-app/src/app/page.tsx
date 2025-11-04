@@ -412,15 +412,32 @@ export default function Home() {
             Have a project in mind? I&apos;d love to hear about it. 
             Let&apos;s discuss how we can bring your ideas to life.
           </p>
-          <a
-            href="mailto:tresallen@gmail.com"
-            className="inline-flex items-center bg-gradient-to-r from-green-600 to-green-500 hover:from-green-500 hover:to-green-400 text-white font-semibold py-4 px-8 rounded-lg transition-all duration-300 text-lg shadow-lg hover:shadow-green-500/25"
-          >
-            <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-            </svg>
-            Get In Touch
-          </a>
+          <div className="flex flex-wrap gap-4 justify-center">
+            <a
+              href="mailto:tresallen@gmail.com"
+              className="inline-flex items-center bg-gradient-to-r from-green-600 to-green-500 hover:from-green-500 hover:to-green-400 text-white font-semibold py-4 px-8 rounded-lg transition-all duration-300 text-lg shadow-lg hover:shadow-green-500/25"
+            >
+              <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+              Get In Touch
+            </a>
+            <a
+              href="https://calendar.google.com/calendar/u/0/r/eventedit?add=tresallen@gmail.com&text=Call%20with%20Kam"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`inline-flex items-center font-semibold py-4 px-8 rounded-lg transition-all duration-300 text-lg shadow-lg ${
+                theme === 'dark'
+                  ? 'bg-gradient-to-r from-gray-700 to-gray-600 hover:from-gray-600 hover:to-gray-500 text-white hover:shadow-gray-500/25'
+                  : 'bg-gradient-to-r from-gray-600 to-gray-500 hover:from-gray-500 hover:to-gray-400 text-white hover:shadow-gray-500/25'
+              }`}
+            >
+              <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+              </svg>
+              Schedule a Call
+            </a>
+          </div>
         </div>
       </section>
 
