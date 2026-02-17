@@ -112,7 +112,7 @@ export default function ResumePage() {
               </div>
               <div className="relative" style={{ height: '800px' }}>
                 <iframe
-                  src="/KamJavaResume.pdf#toolbar=1&navpanes=0&scrollbar=1"
+                  src="/Allen_Kameron_ITDev.pdf#toolbar=1&navpanes=0&scrollbar=1"
                   className="w-full h-full border-0"
                   title="Kameron Allen Resume"
                 />
@@ -124,7 +124,7 @@ export default function ResumePage() {
           <div className="text-center">
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <a
-                href="/KamJavaResume.pdf"
+                href="/Allen_Kameron_ITDev.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center bg-gradient-to-r from-green-600 to-green-500 hover:from-green-500 hover:to-green-400 text-white font-semibold py-4 px-8 rounded-lg transition-all duration-300 text-lg shadow-lg hover:shadow-green-500/25"

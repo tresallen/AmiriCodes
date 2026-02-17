@@ -8,7 +8,7 @@ export default function Home() {
   const projects = [
     {
       id: 1,
-      title: "Freelance Software Engineer",
+      title: "Independent Software Engineer",
       description: "",
       tech: ["Python", "FastAPI", "AI/ML", "LLMs", "Typescript", "Next.js"],
       status: "Current",
