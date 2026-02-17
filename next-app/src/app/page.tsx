@@ -358,7 +358,7 @@ export default function Home() {
                   <span>GitHub</span>
           </a>
           <a
-                  href="https://www.linkedin.com/in/kameron-allen-22b82a1b9/"
+                  href="http://linkedin.com/in/kameronallen/"
             target="_blank"
             rel="noopener noreferrer"
                   className="flex items-center space-x-2 bg-gradient-to-r from-green-600 to-green-500 text-white px-6 py-3 rounded-lg hover:from-green-500 hover:to-green-400 transition-all duration-300"
