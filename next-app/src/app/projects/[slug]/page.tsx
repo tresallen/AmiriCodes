@@ -275,7 +275,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
       <footer className="bg-gradient-to-r from-black via-green-900/30 to-black text-white py-8 border-t border-green-700/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <p className="text-gray-400">
-            &copy; 2025 Kameron Allen. All rights reserved. Built with Next.js and Tailwind CSS.
+            &copy; 2026 Kameron Allen. All rights reserved. Designed and built with Typescript, Next.js and Tailwind CSS. Deployed on Vercel.
           </p>
         </div>
       </footer>

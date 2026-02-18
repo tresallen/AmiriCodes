@@ -148,7 +148,7 @@ export default function ResumePage() {
       }`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <p className={theme === 'dark' ? 'text-gray-400' : 'text-gray-600'}>
-            &copy; 2025 Kameron Allen. All rights reserved. Built with Next.js and Tailwind CSS.
+            &copy; 2026 Kameron Allen. All rights reserved. Designed and built with Typescript, Next.js and Tailwind CSS. Deployed on Vercel.
           </p>
         </div>
       </footer>
