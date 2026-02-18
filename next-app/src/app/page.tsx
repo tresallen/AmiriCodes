@@ -241,7 +241,7 @@ export default function Home() {
                     </a>
                   ) : project.id === 3 ? (
                     <a
-                      href="https://amiricodes.hashnode.dev/fleet-and-field-applications-at-general-motors"
+                      href="https://amiricodes.hashnode.dev/fleet-and-field-applications-at-gener"
                       target="_blank"
                       rel="noopener noreferrer"
                       className={`inline-flex items-center font-semibold transition-colors group/link ${
