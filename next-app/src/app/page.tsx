@@ -15,12 +15,29 @@ export default function Home() {
       year: "Aug 2025 - Current"
     },
     {
+      id: 6,
+      title: "Amiri Codes Website",
+      description: "A personal portfolio.",
+      tech: ["Typescript", "Next.js", "PostgreSQL", "Node.js"],
+      status: "Habitual Work in Progress",
+      year: "2025"
+    },
+    {
       id: 2,
       title: "Contracted Systems Engineer",
       description: "Amazon",
       tech: ["AWS", "CI/CD", "Terraform", "Bash", "PowerShell", "Linux"],
       status: "Completed",
       year: "Nov 2024 - Jan 2025"
+    },
+    {
+      id: 5,
+      title: "Vereda",
+      description: "A comprehensive analytics dashboard for tracking social media performance, engagement metrics, and content optimization insights.",
+      slug: "social-media-analytics",
+      tech: ["React", "D3.js", "Node.js", "MongoDB", "REST API"],
+      status: "Completed",
+      year: "2024"
     },
     {
       id: 3,
@@ -37,23 +54,6 @@ export default function Home() {
       tech: ["Python", "RobotFramework", "Elasticsearch", "Java", "QA Automation"],
       status: "Completed",
       year: "Jun 2022 - Sep 2022"
-    },
-    {
-      id: 5,
-      title: "Vereda",
-      description: "A comprehensive analytics dashboard for tracking social media performance, engagement metrics, and content optimization insights.",
-      slug: "social-media-analytics",
-      tech: ["React", "D3.js", "Node.js", "MongoDB", "REST API"],
-      status: "Completed",
-      year: "2024"
-    },
-    {
-      id: 6,
-      title: "Amiri Codes Website",
-      description: "A personal portfolio.",
-      tech: ["Typescript", "Next.js", "PostgreSQL", "Node.js"],
-      status: "Habitual Work in Progress",
-      year: "2025"
     }
   ];
 
