@@ -449,7 +449,7 @@ export default function Home() {
       }`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <p className={theme === 'dark' ? 'text-gray-400' : 'text-gray-600'}>
-            &copy; 2026 Kameron Allen. All rights reserved. Designed and built with Typescript, Next.js and Tailwind CSS. Deployed on Vercel.
+            &copy; 2026 Kameron Allen. All rights reserved. Designed and built with Next.js, Typescript, and Tailwind CSS. Deployed on Vercel.
           </p>
         </div>
       </footer>
