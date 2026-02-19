@@ -1,12 +1,68 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import { useTheme } from "./ThemeContext";
+
+const HERO_TEXT = "Kameron Allen\nSoftware developer\nI design and develop scalable and high-performance digital solutions to meet the needs of modern businesses.";
+const TYPING_SPEED = 45;
+const CURSOR_BLINK_MS = 530;
 
 export default function Home() {
   const { theme, toggleTheme } = useTheme();
   const [skillsTab, setSkillsTab] = useState<"frontend" | "backend" | "others">("frontend");
+  const [displayedText, setDisplayedText] = useState("");
+  const [cursorVisible, setCursorVisible] = useState(true);
+
+  useEffect(() => {
+    let i = 0;
+    const timer = setInterval(() => {
+      if (i < HERO_TEXT.length) {
+        setDisplayedText(HERO_TEXT.slice(0, i + 1));
+        i++;
+      } else {
+        clearInterval(timer);
+      }
+    }, TYPING_SPEED);
+    return () => clearInterval(timer);
+  }, []);
+
+  useEffect(() => {
+    const blink = setInterval(() => setCursorVisible((v) => !v), CURSOR_BLINK_MS);
+    return () => clearInterval(blink);
+  }, []);
+
+  const renderTypedHero = () => {
+    const lines = displayedText.split("\n");
+    const isDark = theme === "dark";
+    const cursor = (
+      <span
+        className={`inline-block w-0.5 h-6 md:h-7 align-bottom ml-0.5 ${isDark ? "bg-white" : "bg-gray-900"} transition-opacity duration-75`}
+        style={{ opacity: cursorVisible ? 1 : 0 }}
+        aria-hidden
+      />
+    );
+    return (
+      <div className="space-y-2">
+        <h1 className={`text-4xl md:text-5xl font-bold ${isDark ? "text-white" : "text-gray-900"}`}>
+          {lines[0] || "\u00A0"}
+          {lines.length === 1 && cursor}
+        </h1>
+        {lines.length > 1 && (
+          <h2 className={`text-xl md:text-2xl font-medium ${isDark ? "text-gray-400" : "text-gray-600"}`}>
+            {lines[1]}
+            {lines.length === 2 && cursor}
+          </h2>
+        )}
+        {lines.length > 2 && (
+          <p className={`text-lg max-w-2xl leading-relaxed ${isDark ? "text-gray-300" : "text-gray-700"}`}>
+            {lines[2]}
+            {cursor}
+          </p>
+        )}
+      </div>
+    );
+  };
 
   const employment = [
     { company: "Independent", role: "Software Engineer", type: "Current", year: "2025", blogUrl: "https://amiricodes.hashnode.dev/hello-world-meet-gpt" },
@@ -104,18 +160,12 @@ theme === 'dark' ? 'bg-gray-800 text-white hover:bg-gray-700' : 'bg-gray-200 tex
         </div>
       </header>
 
-      {/* Hero - Kevin style */}
+      {/* Hero - Kevin style with typing effect */}
       <section className={`pt-32 pb-16 transition-colors duration-300 ${theme === 'dark' ? '' : 'bg-gray-50'}`}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className={`text-4xl md:text-5xl font-bold mb-2 ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>
-            Kameron Allen
-          </h1>
-          <h2 className={`text-xl md:text-2xl font-medium mb-6 ${theme === 'dark' ? 'text-gray-400' : 'text-gray-600'}`}>
-            Software developer
-          </h2>
-          <p className={`text-lg max-w-2xl leading-relaxed ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>
-            I design and develop scalable and high-performance digital solutions to meet the needs of modern businesses.
-          </p>
+          <div className="mb-6 min-h-[10rem]">
+            {renderTypedHero()}
+          </div>
         </div>
       </section>
 
