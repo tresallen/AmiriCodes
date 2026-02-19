@@ -60,14 +60,14 @@ export default function Home() {
   return (
     <div className={`min-h-screen transition-colors duration-300 ${
       theme === 'dark' 
-        ? 'bg-gradient-to-br from-black via-green-900/20 to-gray-900' 
-        : 'bg-gradient-to-br from-gray-50 via-green-50 to-white'
+        ? 'bg-black' 
+        : 'bg-white'
     }`}>
       {/* Header */}
       <header className={`fixed top-0 left-0 right-0 z-50 backdrop-blur-md shadow-lg transition-colors duration-300 ${
         theme === 'dark'
-          ? 'bg-black/40 border-b border-green-700/30'
-          : 'bg-white/40 border-b border-green-200'
+          ? 'bg-black/80 border-b border-gray-700'
+          : 'bg-white/80 border-b border-gray-200'
       }`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-6">
@@ -77,19 +77,19 @@ export default function Home() {
             <div className="flex items-center space-x-8">
               <nav className="hidden md:flex space-x-8">
                 <a href="https://amiricodes.app" className={`transition-colors ${
-                  theme === 'dark' ? 'text-gray-300 hover:text-green-400' : 'text-gray-700 hover:text-green-600'
+                  theme === 'dark' ? 'text-gray-300 hover:text-white' : 'text-gray-700 hover:text-black'
                 }`}>Home</a>
                 <a href="#projects" className={`transition-colors ${
-                  theme === 'dark' ? 'text-gray-300 hover:text-green-400' : 'text-gray-700 hover:text-green-600'
+                  theme === 'dark' ? 'text-gray-300 hover:text-white' : 'text-gray-700 hover:text-black'
                 }`}>Work</a>
                 <a href="#about" className={`transition-colors ${
-                  theme === 'dark' ? 'text-gray-300 hover:text-green-400' : 'text-gray-700 hover:text-green-600'
+                  theme === 'dark' ? 'text-gray-300 hover:text-white' : 'text-gray-700 hover:text-black'
                 }`}>About</a>
                 <a href="https://amiricodes.hashnode.dev/" target="_blank" rel="noopener noreferrer" className={`transition-colors ${
-                  theme === 'dark' ? 'text-gray-300 hover:text-green-400' : 'text-gray-700 hover:text-green-600'
+                  theme === 'dark' ? 'text-gray-300 hover:text-white' : 'text-gray-700 hover:text-black'
                 }`}>Blog</a>
                 <a href="/resume" className={`transition-colors ${
-                  theme === 'dark' ? 'text-gray-300 hover:text-green-400' : 'text-gray-700 hover:text-green-600'
+                  theme === 'dark' ? 'text-gray-300 hover:text-white' : 'text-gray-700 hover:text-black'
                 }`}>Resume</a>
               </nav>
               {/* Theme Toggle Button */}
@@ -97,7 +97,7 @@ export default function Home() {
                 onClick={toggleTheme}
                 className={`p-2 rounded-lg transition-all duration-300 ${
                   theme === 'dark'
-                    ? 'bg-gray-800 text-yellow-400 hover:bg-gray-700'
+                    ? 'bg-gray-800 text-white hover:bg-gray-700'
                     : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
                 }`}
                 aria-label="Toggle theme"
@@ -121,14 +121,14 @@ export default function Home() {
       <section className={`pt-24 transition-colors duration-300 ${
         theme === 'dark'
           ? ''
-          : 'bg-gradient-to-br from-white via-green-50 to-gray-50'
+          : 'bg-gray-50'
       }`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <div className="text-center">
             <h1 className={`text-4xl md:text-6xl font-bold bg-gradient-to-r bg-clip-text text-transparent mb-6 ${
               theme === 'dark'
-                ? 'from-white via-green-200 to-green-400'
-                : 'from-gray-900 via-green-600 to-green-500'
+                ? 'from-white to-gray-300'
+                : 'from-black to-gray-600'
             }`}>
               Hey I&apos;m Kam (code name Amiri)
             </h1>
@@ -146,12 +146,12 @@ export default function Home() {
       <section id="projects" className={`py-16 scroll-mt-24 transition-colors duration-300 ${
         theme === 'dark'
           ? ''
-          : 'bg-gradient-to-br from-gray-50 via-green-50/50 to-white'
+          : 'bg-gray-100'
       }`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className={`text-3xl font-bold mb-4 ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>Work</h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-green-500 to-green-400 mx-auto mb-6"></div>
+            <div className="w-24 h-1 bg-gray-400 mx-auto mb-6"></div>
             <p className={`max-w-2xl mx-auto ${theme === 'dark' ? 'text-gray-300' : 'text-gray-600'}`}>
               A collection of my recent work showcasing various technologies and problem-solving approaches.
             </p>
@@ -163,14 +163,14 @@ export default function Home() {
                 key={project.id}
                 className={`rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group ${
                   theme === 'dark'
-                    ? 'bg-gradient-to-br from-gray-900 to-black border border-gray-700 hover:border-green-500 hover:shadow-green-500/10'
-                    : 'bg-white border border-gray-200 hover:border-green-400 hover:shadow-green-500/20'
+                    ? 'bg-gray-900 border border-gray-700 hover:border-gray-500'
+                    : 'bg-white border border-gray-200 hover:border-gray-400'
                 }`}
               >
                 <div className="p-6">
                   <div className="flex justify-between items-start mb-4">
                     <div className="flex-1">
-                      <h3 className={`text-xl font-semibold mb-2 group-hover:text-green-500 transition-colors ${
+                      <h3 className={`text-xl font-semibold mb-2 group-hover:text-gray-400 transition-colors ${
                         theme === 'dark' ? 'text-white' : 'text-gray-900'
                       }`}>
                         {project.title}
@@ -179,11 +179,11 @@ export default function Home() {
                         <span className={`px-2 py-1 rounded-full text-xs font-medium ${
                           project.status === 'Completed' 
                             ? theme === 'dark'
-                              ? 'bg-green-900/50 text-green-400 border border-green-600'
-                              : 'bg-green-100 text-green-700 border border-green-300'
+                              ? 'bg-gray-700 text-gray-300 border border-gray-600'
+                              : 'bg-gray-200 text-gray-700 border border-gray-400'
                             : theme === 'dark'
-                              ? 'bg-yellow-900/50 text-yellow-400 border border-yellow-600'
-                              : 'bg-yellow-100 text-yellow-700 border border-yellow-300'
+                              ? 'bg-gray-700 text-gray-300 border border-gray-600'
+                              : 'bg-gray-200 text-gray-700 border border-gray-400'
                         }`}>
                           {project.status}
                         </span>
@@ -202,8 +202,8 @@ export default function Home() {
                         key={tech}
                         className={`px-3 py-1 rounded-full text-sm font-medium ${
                           theme === 'dark'
-                            ? 'bg-green-900/30 text-green-300 border border-green-700/50'
-                            : 'bg-green-50 text-green-700 border border-green-200'
+                            ? 'bg-green-900 text-green-100 border border-green-800'
+                            : 'bg-green-900 text-green-100 border border-green-800'
                         }`}
                       >
                         {tech}
@@ -217,7 +217,7 @@ export default function Home() {
                       target="_blank"
                       rel="noopener noreferrer"
                       className={`inline-flex items-center font-semibold transition-colors group/link ${
-                        theme === 'dark' ? 'text-green-400 hover:text-green-300' : 'text-green-600 hover:text-green-700'
+                        theme === 'dark' ? 'text-gray-300 hover:text-white' : 'text-gray-600 hover:text-black'
                       }`}
                     >
                       View Details
@@ -231,7 +231,7 @@ export default function Home() {
                       target="_blank"
                       rel="noopener noreferrer"
                       className={`inline-flex items-center font-semibold transition-colors group/link ${
-                        theme === 'dark' ? 'text-green-400 hover:text-green-300' : 'text-green-600 hover:text-green-700'
+                        theme === 'dark' ? 'text-gray-300 hover:text-white' : 'text-gray-600 hover:text-black'
                       }`}
                     >
                       View Details
@@ -245,7 +245,7 @@ export default function Home() {
                       target="_blank"
                       rel="noopener noreferrer"
                       className={`inline-flex items-center font-semibold transition-colors group/link ${
-                        theme === 'dark' ? 'text-green-400 hover:text-green-300' : 'text-green-600 hover:text-green-700'
+                        theme === 'dark' ? 'text-gray-300 hover:text-white' : 'text-gray-600 hover:text-black'
                       }`}
                     >
                       View Details
@@ -259,7 +259,7 @@ export default function Home() {
                       target="_blank"
                       rel="noopener noreferrer"
                       className={`inline-flex items-center font-semibold transition-colors group/link ${
-                        theme === 'dark' ? 'text-green-400 hover:text-green-300' : 'text-green-600 hover:text-green-700'
+                        theme === 'dark' ? 'text-gray-300 hover:text-white' : 'text-gray-600 hover:text-black'
                       }`}
                     >
                       View Details
@@ -273,7 +273,7 @@ export default function Home() {
                       target="_blank"
                       rel="noopener noreferrer"
                       className={`inline-flex items-center font-semibold transition-colors group/link ${
-                        theme === 'dark' ? 'text-green-400 hover:text-green-300' : 'text-green-600 hover:text-green-700'
+                        theme === 'dark' ? 'text-gray-300 hover:text-white' : 'text-gray-600 hover:text-black'
                       }`}
                     >
                       View Details
@@ -287,7 +287,7 @@ export default function Home() {
                       target="_blank"
                       rel="noopener noreferrer"
                       className={`inline-flex items-center font-semibold transition-colors group/link ${
-                        theme === 'dark' ? 'text-green-400 hover:text-green-300' : 'text-green-600 hover:text-green-700'
+                        theme === 'dark' ? 'text-gray-300 hover:text-white' : 'text-gray-600 hover:text-black'
                       }`}
                     >
                       View Details
@@ -299,7 +299,7 @@ export default function Home() {
                     <Link
                       href={`/projects/${project.slug}`}
                       className={`inline-flex items-center font-semibold transition-colors group/link ${
-                        theme === 'dark' ? 'text-green-400 hover:text-green-300' : 'text-green-600 hover:text-green-700'
+                        theme === 'dark' ? 'text-gray-300 hover:text-white' : 'text-gray-600 hover:text-black'
                       }`}
                     >
                       View Details
@@ -319,12 +319,12 @@ export default function Home() {
       <section id="about" className={`py-16 scroll-mt-24 transition-colors duration-300 ${
         theme === 'dark'
           ? ''
-          : 'bg-gradient-to-br from-white via-green-50 to-gray-100'
+          : 'bg-gray-100'
       }`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className={`text-3xl font-bold mb-4 ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>About Me</h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-green-500 to-green-400 mx-auto"></div>
+            <div className="w-24 h-1 bg-gray-400 mx-auto"></div>
           </div>
           
           <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -361,7 +361,7 @@ export default function Home() {
                   href="http://linkedin.com/in/kameronallen/"
             target="_blank"
             rel="noopener noreferrer"
-                  className="flex items-center space-x-2 bg-gradient-to-r from-green-600 to-green-500 text-white px-6 py-3 rounded-lg hover:from-green-500 hover:to-green-400 transition-all duration-300"
+                  className="flex items-center space-x-2 bg-gray-700 text-white px-6 py-3 rounded-lg hover:bg-gray-600 transition-all duration-300"
                 >
                   <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
@@ -385,12 +385,12 @@ export default function Home() {
             </div>
             <div className={`rounded-2xl p-8 text-white shadow-lg ${
               theme === 'dark'
-                ? 'bg-gradient-to-br from-green-600 via-green-700 to-black'
-                : 'bg-gradient-to-br from-green-500 via-green-600 to-green-700'
+                ? 'bg-gradient-to-br from-gray-800 to-black'
+                : 'bg-gradient-to-br from-gray-700 to-gray-800'
             }`}>
               <div className="text-6xl mb-4">🚀</div>
               <h3 className="text-2xl font-semibold mb-4">Always Learning</h3>
-              <p className={`leading-relaxed ${theme === 'dark' ? 'text-green-100' : 'text-white'}`}>
+              <p className={`leading-relaxed ${theme === 'dark' ? 'text-gray-200' : 'text-gray-100'}`}>
                 Continuously exploring new technologies and best practices to deliver exceptional results. 
                 Currently diving deep into AI/ML and cloud architecture.
               </p>
@@ -403,11 +403,11 @@ export default function Home() {
       <section id="contact" className={`py-16 scroll-mt-24 transition-colors duration-300 ${
         theme === 'dark'
           ? ''
-          : 'bg-gradient-to-br from-gray-50 via-green-50 to-white'
+          : 'bg-gray-100'
       }`}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className={`text-3xl font-bold mb-4 ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>Let&apos;s Work Together</h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-green-500 to-green-400 mx-auto mb-8"></div>
+          <div className="w-24 h-1 bg-gray-400 mx-auto mb-8"></div>
           <p className={`mb-8 text-lg leading-relaxed ${theme === 'dark' ? 'text-gray-300' : 'text-gray-600'}`}>
             Have a project in mind? I&apos;d love to hear about it. 
             Let&apos;s discuss how we can bring your ideas to life.
@@ -415,7 +415,7 @@ export default function Home() {
           <div className="flex flex-wrap gap-4 justify-center">
             <a
               href="mailto:tresallen@gmail.com"
-              className="inline-flex items-center bg-gradient-to-r from-green-600 to-green-500 hover:from-green-500 hover:to-green-400 text-white font-semibold py-4 px-8 rounded-lg transition-all duration-300 text-lg shadow-lg hover:shadow-green-500/25"
+              className="inline-flex items-center bg-gray-800 hover:bg-gray-700 text-white font-semibold py-4 px-8 rounded-lg transition-all duration-300 text-lg shadow-lg"
             >
               <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -444,8 +444,8 @@ export default function Home() {
       {/* Footer */}
       <footer className={`py-8 border-t transition-colors duration-300 ${
         theme === 'dark'
-          ? 'text-white border-green-700/30'
-          : 'bg-gradient-to-r from-white via-green-50 to-white text-gray-900 border-green-200'
+          ? 'border-t border-gray-700 text-white'
+          : 'border-t border-gray-200 bg-white text-gray-900'
       }`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <p className={theme === 'dark' ? 'text-gray-400' : 'text-gray-600'}>

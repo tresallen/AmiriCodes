@@ -123,33 +123,33 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-black via-green-900/20 to-gray-900">
+    <div className="min-h-screen bg-black">
       {/* Header */}
-      <header className="bg-gradient-to-r from-black to-green-900/30 shadow-lg border-b border-green-700/30">
+      <header className="bg-black shadow-lg border-b border-gray-700">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-6">
-            <Link href="/" className="text-2xl font-bold text-white hover:text-green-400 transition-colors">
+            <Link href="/" className="text-2xl font-bold text-white hover:text-gray-300 transition-colors">
               Your Name
             </Link>
                   <nav className="hidden md:flex space-x-8">
-                    <a href="https://amiricodes.app" className="text-gray-300 hover:text-green-400 transition-colors">Home</a>
-                    <Link href="/#about" className="text-gray-300 hover:text-green-400 transition-colors">About</Link>
-                    <Link href="/#projects" className="text-gray-300 hover:text-green-400 transition-colors">Projects</Link>
-                    <Link href="/#contact" className="text-gray-300 hover:text-green-400 transition-colors">Contact</Link>
-                    <a href="https://amiricodes.hashnode.dev/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-green-400 transition-colors">Blog</a>
-                    <Link href="/resume" className="text-gray-300 hover:text-green-400 transition-colors">Resume</Link>
+                    <a href="https://amiricodes.app" className="text-gray-300 hover:text-white transition-colors">Home</a>
+                    <Link href="/#about" className="text-gray-300 hover:text-white transition-colors">About</Link>
+                    <Link href="/#projects" className="text-gray-300 hover:text-white transition-colors">Projects</Link>
+                    <Link href="/#contact" className="text-gray-300 hover:text-white transition-colors">Contact</Link>
+                    <a href="https://amiricodes.hashnode.dev/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">Blog</a>
+                    <Link href="/resume" className="text-gray-300 hover:text-white transition-colors">Resume</Link>
                   </nav>
           </div>
         </div>
       </header>
 
       {/* Project Header */}
-      <section className="bg-gradient-to-br from-black via-green-900/10 to-gray-900 py-16">
+      <section className="bg-black py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <Link 
               href="/#projects" 
-              className="inline-flex items-center text-green-400 hover:text-green-300 font-medium mb-6 transition-colors"
+              className="inline-flex items-center text-gray-400 hover:text-white font-medium mb-6 transition-colors"
             >
               <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
@@ -157,15 +157,15 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
               Back to Projects
             </Link>
             
-            <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-white via-green-200 to-green-400 bg-clip-text text-transparent mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent mb-6">
               {project.title}
             </h1>
             
             <div className="flex justify-center items-center space-x-4 mb-8">
               <span className={`px-4 py-2 rounded-full text-sm font-medium ${
                 project.status === 'Completed' 
-                  ? 'bg-green-900/50 text-green-400 border border-green-600' 
-                  : 'bg-yellow-900/50 text-yellow-400 border border-yellow-600'
+                  ? 'bg-gray-700 text-gray-300 border border-gray-600' 
+                  : 'bg-gray-700 text-gray-300 border border-gray-600'
               }`}>
                 {project.status}
               </span>
@@ -180,7 +180,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
       </section>
 
       {/* Project Content */}
-      <section className="py-16 bg-gradient-to-br from-black via-green-900/10 to-gray-900">
+      <section className="py-16 bg-black">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-gradient-to-br from-gray-900 to-black rounded-2xl shadow-lg p-8 md:p-12 border border-gray-700">
             {/* Technologies */}
@@ -190,7 +190,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                 {project.tech.map((tech) => (
                   <span
                     key={tech}
-                    className="px-4 py-2 bg-green-900/30 text-green-300 rounded-full text-sm font-medium border border-green-700/50"
+                    className="px-4 py-2 bg-green-900 text-green-100 rounded-full text-sm font-medium border border-green-800"
                   >
                     {tech}
                   </span>
@@ -218,7 +218,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
               <ul className="space-y-4">
                 {project.challenges.map((challenge, index) => (
                   <li key={index} className="flex items-start">
-                    <span className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-3 mr-4"></span>
+                    <span className="flex-shrink-0 w-2 h-2 bg-gray-500 rounded-full mt-3 mr-4"></span>
                     <span className="text-gray-300 leading-relaxed">{challenge}</span>
                   </li>
                 ))}
@@ -231,7 +231,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
               <ul className="space-y-4">
                 {project.results.map((result, index) => (
                   <li key={index} className="flex items-start">
-                    <span className="flex-shrink-0 w-2 h-2 bg-green-400 rounded-full mt-3 mr-4"></span>
+                    <span className="flex-shrink-0 w-2 h-2 bg-gray-500 rounded-full mt-3 mr-4"></span>
                     <span className="text-gray-300 leading-relaxed">{result}</span>
                   </li>
                 ))}
@@ -258,7 +258,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                   href={project.liveUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center space-x-2 bg-gradient-to-r from-green-600 to-green-500 text-white px-6 py-3 rounded-lg hover:from-green-500 hover:to-green-400 transition-all duration-300"
+                  className="flex items-center justify-center space-x-2 bg-gray-700 text-white px-6 py-3 rounded-lg hover:bg-gray-600 transition-all duration-300"
                 >
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
@@ -272,7 +272,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
       </section>
 
       {/* Footer */}
-      <footer className="bg-gradient-to-r from-black via-green-900/30 to-black text-white py-8 border-t border-green-700/30">
+      <footer className="bg-black text-white py-8 border-t border-gray-700">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <p className="text-gray-400">
             &copy; 2026 Kameron Allen. All rights reserved. Designed and built with Next.js, Typescript, and Tailwind CSS. Deployed on Vercel.
