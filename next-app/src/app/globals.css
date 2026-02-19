@@ -1,8 +1,9 @@
 @import "tailwindcss";
 
 :root {
-  --background: #0f0f0f;
-  --foreground: #ffffff;
+  --background: #f0f4f8;
+  --foreground: #1a1a1a;
+  --card-sheen: linear-gradient(135deg, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,0.2) 100%);
 }
 
 @theme inline {
@@ -14,6 +15,31 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* Atmospheric blurred background */
+.atmospheric-bg {
+  background: linear-gradient(135deg, #e8eef4 0%, #f5f7fa 25%, #e2e8f0 50%, #f0f4f8 75%, #e8ecf1 100%);
+  background-attachment: fixed;
+}
+
+.atmospheric-bg-dark {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+  background-attachment: fixed;
+}
+
+/* Metallic card sheen */
+.card-sheen {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-sheen::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(255,255,255,0.5) 0%, transparent 40%, rgba(255,255,255,0.1) 100%);
+  pointer-events: none;
 }
 
 /* Custom scrollbar for dark theme */
