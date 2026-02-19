@@ -161,10 +161,10 @@ export default function Home() {
             {projects.map((project) => (
               <div
                 key={project.id}
-                className={`rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group ${
+                className={`rounded-xl border transition-all duration-300 overflow-hidden group ${
                   theme === 'dark'
-                    ? 'bg-gray-900 border border-gray-700 hover:border-gray-500'
-                    : 'bg-white border border-gray-200 hover:border-gray-400'
+                    ? 'bg-transparent border-gray-700 hover:border-gray-500'
+                    : 'bg-transparent border-gray-200 hover:border-gray-400'
                 }`}
               >
                 <div className="p-6">
