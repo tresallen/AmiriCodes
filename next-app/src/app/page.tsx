@@ -1,10 +1,12 @@
 "use client";
 
+import { useState } from "react";
 import Link from "next/link";
 import { useTheme } from "./ThemeContext";
 
 export default function Home() {
   const { theme, toggleTheme } = useTheme();
+  const [carouselIndex, setCarouselIndex] = useState(0);
   const projects = [
     {
       id: 1,
@@ -157,11 +159,29 @@ export default function Home() {
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {projects.map((project) => (
+          <div className="flex items-center gap-4">
+            {/* Left Arrow */}
+            <button
+              onClick={() => setCarouselIndex((i) => Math.max(0, i - 1))}
+              disabled={carouselIndex === 0}
+              className={`flex-shrink-0 p-3 rounded-full transition-all ${
+                carouselIndex === 0
+                  ? 'opacity-30 cursor-not-allowed'
+                  : 'hover:scale-110'
+              } ${theme === 'dark' ? 'bg-gray-800 text-white hover:bg-gray-700' : 'bg-gray-200 text-gray-800 hover:bg-gray-300'}`}
+              aria-label="Previous projects"
+            >
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+              </svg>
+            </button>
+
+            {/* Carousel Content - 2 projects per view */}
+            <div className="flex-1 flex gap-8 overflow-hidden">
+              {projects.slice(carouselIndex * 2, carouselIndex * 2 + 2).map((project) => (
               <div
                 key={project.id}
-                className={`rounded-xl border transition-all duration-300 overflow-hidden group ${
+                className={`flex-1 min-w-0 rounded-xl border transition-all duration-300 overflow-hidden group ${
                   theme === 'dark'
                     ? 'bg-transparent border-gray-700 hover:border-gray-500'
                     : 'bg-transparent border-gray-200 hover:border-gray-400'
@@ -307,6 +327,23 @@ export default function Home() {
                 </div>
               </div>
             ))}
+            </div>
+
+            {/* Right Arrow */}
+            <button
+              onClick={() => setCarouselIndex((i) => Math.min(Math.ceil(projects.length / 2) - 1, i + 1))}
+              disabled={carouselIndex >= Math.ceil(projects.length / 2) - 1}
+              className={`flex-shrink-0 p-3 rounded-full transition-all ${
+                carouselIndex >= Math.ceil(projects.length / 2) - 1
+                  ? 'opacity-30 cursor-not-allowed'
+                  : 'hover:scale-110'
+              } ${theme === 'dark' ? 'bg-gray-800 text-white hover:bg-gray-700' : 'bg-gray-200 text-gray-800 hover:bg-gray-300'}`}
+              aria-label="Next projects"
+            >
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
           </div>
         </div>
       </section>
