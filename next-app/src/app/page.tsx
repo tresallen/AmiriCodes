@@ -202,8 +202,8 @@ export default function Home() {
                         key={tech}
                         className={`px-3 py-1 rounded-full text-sm font-medium ${
                           theme === 'dark'
-                            ? 'bg-green-900 text-green-100 border border-green-800'
-                            : 'bg-green-900 text-green-100 border border-green-800'
+                            ? 'bg-emerald-800 text-emerald-50 border border-emerald-700'
+                            : 'bg-emerald-800 text-emerald-50 border border-emerald-700'
                         }`}
                       >
                         {tech}
