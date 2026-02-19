@@ -7,8 +7,6 @@ cover: https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/vi1HXPw6hyw/up
 
 ---
 
-### Overview
-
 Most developers start with “Hello, World.” Mine started with a 5-minute AI workflow that had no business taking five minutes.
 
 This post breaks down how I rebuilt that system into a scalable, production-ready AI agent architecture - reducing runtime by 85% while improving reliability.
