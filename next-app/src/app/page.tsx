@@ -20,7 +20,7 @@ export default function Home() {
       description: "A personal portfolio.",
       tech: ["Typescript", "Next.js", "PostgreSQL", "Node.js"],
       status: "Habitual Work in Progress",
-      year: "2025"
+      year: "2025 - Current"
     },
     {
       id: 2,
@@ -178,12 +178,8 @@ export default function Home() {
                       <div className="flex items-center space-x-2 mb-3">
                         <span className={`px-2 py-1 rounded-full text-xs font-medium ${
                           project.status === 'Completed' 
-                            ? theme === 'dark'
-                              ? 'bg-gray-700 text-gray-300 border border-gray-600'
-                              : 'bg-gray-200 text-gray-700 border border-gray-400'
-                            : theme === 'dark'
-                              ? 'bg-gray-700 text-gray-300 border border-gray-600'
-                              : 'bg-gray-200 text-gray-700 border border-gray-400'
+                            ? 'bg-transparent border border-gray-500 text-gray-500'
+                            : 'bg-white border border-gray-300 text-gray-600'
                         }`}>
                           {project.status}
                         </span>
