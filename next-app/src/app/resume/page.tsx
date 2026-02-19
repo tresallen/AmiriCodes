@@ -30,10 +30,10 @@ export default function ResumePage() {
                 <a href="https://amiricodes.app" className={`transition-colors ${
                   theme === 'dark' ? 'text-gray-300 hover:text-white' : 'text-gray-700 hover:text-black'
                 }`}>Home</a>
-                <Link href="/#projects" className={`transition-colors ${
+                <Link href="/#works" className={`transition-colors ${
                   theme === 'dark' ? 'text-gray-300 hover:text-white' : 'text-gray-700 hover:text-black'
                 }`}>Work</Link>
-                <Link href="/#about" className={`transition-colors ${
+                <Link href="/#skills" className={`transition-colors ${
                   theme === 'dark' ? 'text-gray-300 hover:text-white' : 'text-gray-700 hover:text-black'
                 }`}>About</Link>
                 <a href="https://amiricodes.hashnode.dev/" target="_blank" rel="noopener noreferrer" className={`transition-colors ${

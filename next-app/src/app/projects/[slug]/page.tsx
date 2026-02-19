@@ -133,8 +133,8 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
             </Link>
                   <nav className="hidden md:flex space-x-8">
                     <a href="https://amiricodes.app" className="text-gray-300 hover:text-white transition-colors">Home</a>
-                    <Link href="/#about" className="text-gray-300 hover:text-white transition-colors">About</Link>
-                    <Link href="/#projects" className="text-gray-300 hover:text-white transition-colors">Projects</Link>
+                    <Link href="/#skills" className="text-gray-300 hover:text-white transition-colors">Skills</Link>
+                    <Link href="/#works" className="text-gray-300 hover:text-white transition-colors">Work</Link>
                     <Link href="/#contact" className="text-gray-300 hover:text-white transition-colors">Contact</Link>
                     <a href="https://amiricodes.hashnode.dev/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">Blog</a>
                     <Link href="/resume" className="text-gray-300 hover:text-white transition-colors">Resume</Link>
@@ -148,7 +148,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <Link 
-              href="/#projects" 
+              href="/#works" 
               className="inline-flex items-center text-gray-400 hover:text-white font-medium mb-6 transition-colors"
             >
               <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
