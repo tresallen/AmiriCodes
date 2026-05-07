@@ -69,7 +69,7 @@ export default function Home() {
     { company: "Amazon", role: "Contracted Systems Engineer", type: "Completed", year: "2024", blogUrl: "https://amiricodes.hashnode.dev/different-technologies-same-learning-curve" },
     { company: "General Motors", role: "Software Engineer", type: "Completed", year: "2023-2024", blogUrl: "https://amiricodes.hashnode.dev/fleet-and-field-applications-at-gener" },
     { company: "General Motors", role: "Software Engineer Intern", type: "Completed", year: "2022", blogUrl: "https://amiricodes.hashnode.dev/from-assuring-patients-to-assuring-code" },
-    { company: "Amazon", role: "Software Engineer Intern", type: "Completed", year: "2021" },
+    { company: "Amazon", role: "Software Engineer Intern", type: "Completed", year: "2021", blogUrl: null },
   ];
 
   const sideProjects = [
@@ -255,7 +255,7 @@ theme === 'dark' ? 'bg-gray-800 text-white hover:bg-gray-700' : 'bg-gray-200 tex
                     <p className={`text-sm ${theme === 'dark' ? 'text-gray-400' : 'text-gray-600'}`}>
                       {job.role}
                     </p>
-                    {job.blogUrl && (
+                    {job.blogUrl ? (
                       <a
                         href={job.blogUrl}
                         target="_blank"
@@ -269,6 +269,19 @@ theme === 'dark' ? 'bg-gray-800 text-white hover:bg-gray-700' : 'bg-gray-200 tex
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                         </svg>
                       </a>
+                    ) : (
+                      <span
+                        className={`text-sm mt-1 inline-flex items-center font-medium cursor-not-allowed opacity-50 ${
+                          theme === 'dark' ? 'text-emerald-400' : 'text-emerald-600'
+                        }`}
+                        aria-disabled="true"
+                        title="Details not available"
+                      >
+                        View Details
+                        <svg className="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                        </svg>
+                      </span>
                     )}
                   </div>
                   <div className="text-right flex-shrink-0">
