@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { useTheme } from "./ThemeContext";
 
-const HERO_TEXT = "Kameron Allen\nSoftware developer\nI design and develop scalable and high-performance digital solutions to meet the needs of modern businesses.";
+const HERO_TEXT = "Amir Allen\nSoftware developer\nI design and develop scalable and high-performance digital solutions to meet the needs of modern businesses.";
 const TYPING_SPEED = 45;
 const CURSOR_BLINK_MS = 530;
 
@@ -69,6 +69,7 @@ export default function Home() {
     { company: "Amazon", role: "Contracted Systems Engineer", type: "Completed", year: "2024", blogUrl: "https://amiricodes.hashnode.dev/different-technologies-same-learning-curve" },
     { company: "General Motors", role: "Software Engineer", type: "Completed", year: "2023-2024", blogUrl: "https://amiricodes.hashnode.dev/fleet-and-field-applications-at-gener" },
     { company: "General Motors", role: "Software Engineer Intern", type: "Completed", year: "2022", blogUrl: "https://amiricodes.hashnode.dev/from-assuring-patients-to-assuring-code" },
+    { company: "Amazon", role: "Software Engineer Intern", type: "Completed", year: "2021" },
   ];
 
   const sideProjects = [
@@ -431,7 +432,7 @@ theme === 'dark' ? 'bg-gray-800 text-white hover:bg-gray-700' : 'bg-gray-200 tex
       }`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <p className="text-sm">
-            &copy; 2026 Kameron Allen. All rights reserved. Designed and built with Next.js, Typescript, and Tailwind CSS. Deployed on Vercel.
+            &copy; 2026 Amir Allen. All rights reserved. Designed and built with Next.js, Typescript, and Tailwind CSS. Deployed on Vercel.
           </p>
         </div>
       </footer>

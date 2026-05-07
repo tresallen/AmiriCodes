@@ -102,7 +102,7 @@ export default function ResumePage() {
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <div className="bg-gray-50 px-6 py-4 border-b border-gray-200">
                 <div className="flex items-center justify-between">
-                  <h4 className="text-lg font-semibold text-gray-800">Kameron Allen - Resume</h4>
+                  <h4 className="text-lg font-semibold text-gray-800">Amir Allen - Resume</h4>
                   <div className="flex items-center space-x-2">
                     <span className="text-sm text-gray-500">PDF Document</span>
                     <div className="flex space-x-1">
@@ -115,9 +115,9 @@ export default function ResumePage() {
               </div>
               <div className="relative" style={{ height: '800px' }}>
                 <iframe
-                  src="/Allen_Kameron_ITDev.pdf#toolbar=1&navpanes=0&scrollbar=1"
+                  src="/protonmail.pdf#toolbar=1&navpanes=0&scrollbar=1"
                   className="w-full h-full border-0"
-                  title="Kameron Allen Resume"
+                  title="Amir Allen Resume"
                 />
               </div>
             </div>
@@ -127,7 +127,7 @@ export default function ResumePage() {
           <div className="text-center">
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <a
-                href="/Allen_Kameron_ITDev.pdf"
+                href="/protonmail.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center bg-gray-800 hover:bg-gray-700 text-white font-semibold py-4 px-8 rounded-lg transition-all duration-300 text-lg shadow-lg"
@@ -151,7 +151,7 @@ export default function ResumePage() {
       }`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <p className={theme === 'dark' ? 'text-gray-400' : 'text-gray-600'}>
-            &copy; 2026 Kameron Allen. All rights reserved. Designed and built with Next.js, Typescript, and Tailwind CSS. Deployed on Vercel.
+            &copy; 2026 Amir Allen. All rights reserved. Designed and built with Next.js, Typescript, and Tailwind CSS. Deployed on Vercel.
           </p>
         </div>
       </footer>
