@@ -86,6 +86,18 @@ export default function Home() {
       tech: ["React", "D3.js", "Node.js", "MongoDB", "REST API"],
       slug: "social-media-analytics",
     },
+    {
+      title: "GoodBye Box",
+      description: "A mobile app for organizing and managing personal belongings.",
+      tech: ["React Native", "PostgreSQL", "TypeScript", "Node.js"],
+      slug: null,
+    },
+    {
+      title: "Wrthy",
+      description: "An AI-powered mobile application built with cross-platform tooling.",
+      tech: ["Flutter", "Dart", "Firebase", "Gemini AI"],
+      slug: null,
+    },
   ];
 
   const skills = {
