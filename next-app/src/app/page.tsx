@@ -65,11 +65,12 @@ export default function Home() {
   };
 
   const employment = [
-    { company: "Independent", role: "Software Engineer", type: "Current", year: "2025", blogUrl: "https://amiricodes.hashnode.dev/hello-world-meet-gpt" },
+    { company: "Visa", role: "Software Engineer", type: "Current", year: "2026 - Current" },
+    { company: "Independent", role: "Software Engineer", type: "Current", year: "2025 - Current", blogUrl: "https://amiricodes.hashnode.dev/hello-world-meet-gpt" },
     { company: "Amazon", role: "Contracted Systems Engineer", type: "Completed", year: "2024", blogUrl: "https://amiricodes.hashnode.dev/different-technologies-same-learning-curve" },
     { company: "General Motors", role: "Software Engineer", type: "Completed", year: "2023-2024", blogUrl: "https://amiricodes.hashnode.dev/fleet-and-field-applications-at-gener" },
     { company: "General Motors", role: "Software Engineer Intern", type: "Completed", year: "2022", blogUrl: "https://amiricodes.hashnode.dev/from-assuring-patients-to-assuring-code" },
-    { company: "Amazon", role: "Software Engineer Intern", type: "Completed", year: "2021", blogUrl: null },
+    // { company: "Amazon", role: "Software Engineer Intern", type: "Completed", year: "2021", blogUrl: null },
   ];
 
   const sideProjects = [
